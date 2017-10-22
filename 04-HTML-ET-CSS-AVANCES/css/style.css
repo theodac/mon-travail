@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body {
+    background-image: url('../img/fond.png');
+    background-size: cover;
+}
+.page {
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto 80px auto;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 15px #CCC;
+    font-family: 'Lora', serif;
+
+}
+.accroche {
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+/*-- TopHeader --*/
+.topheader {
+    float: left;
+    height: auto;
+    width: 1000px;
+    background-color: #4b4b53;
+    margin-bottom: 10px;
+}
+.topheader p {
+    text-align: right;
+    margin-right: 20px;
+}
+/*-- Header --*/
+
+header {
+    height: auto;
+}
+header img {
+    float: left;
+    background-color: black;
+    width: 35%;
+    height: 73px;
+}
+header nav {
+    float: left;
+    background-color: #65656d;
+    
+}
+header ul {
+    margin-left: 125.95px;
+}
+header li {
+    display: inline-block;
+    padding: 5px 25px ;
+    font-size: 25px;
+    color: white;
+
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(229, 255, 0);
+}
+#projecteur {
+    width: 100%;
+    height: auto;
+
+}
+.partenaires {
+    float: left;
+}
+section {
+    height: auto;
+    margin-bottom: 50px;
+    float: left;
+}
+aside {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+aside img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+article {
+    float: left;
+    width: 45%;
+    text-align: center;
+    margin-top: 10%;
+    background-color: #65656d;
+    margin-left: 25px;
+    border-radius: 6px;
+}
+article img {
+    width: 20%;
+    margin-top: 5px;
+}
+.partenaires h2{
+    text-align: center;
+}
+.partenaires img {
+    width: calc(94%/4);
+    margin-left: 10px;
+}
+footer {
+    width: 100%;
+    background-color: rgb(101, 101, 109);
+    float: left;
+    padding: 10px 10px;
+}
+.gmap {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+.newsletter {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+ .newsletter fieldset {
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 8px;
+        border: 2px solid #a29a11;
+        color: #a29a11;
+        height: 180px;
+    }
+
+
+ .newsletter input {
+        width: 91%;
+        height: 25px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+
+.newsletter input[type=submit] {
+        width: 100%;
+        height: 30px;
+        border: 0;
+        background: #a29a11;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    } 
+
+.contact {
+        /* -- Dimension & Positionnement -- */
+        width: calc( (100% / 3) - 10px);
+        float: left;
+        /* -- Décoration -- */
+        margin-left: 10px;
+    }
+
+.contact h3 {
+        color: rgb(0, 0, 0);
+        padding-left: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: normal;
+    }
+.contact address {
+        color: rgb(0, 0, 0);
+        padding-left: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+.contact address strong {
+        font-size: 20px;
+    }
+.contact address a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+.contact address a:hover {
+        text-decoration: underline;
+    }
+    i {
+        color: #a29a11;
+    }
+    i:hover {
+        color: white;
+    }

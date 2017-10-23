@@ -46,10 +46,12 @@ header img {
 header nav {
     float: left;
     background-color: #65656d;
+    width: 65%;
+    height: 73px;
     
 }
 header ul {
-    margin-left: 125.95px;
+    text-align: right;
 }
 header li {
     display: inline-block;
@@ -67,7 +69,9 @@ a:hover {
 }
 #projecteur {
     width: 100%;
-    height: auto;
+    height: 370px;;
+    margin-top: -83px;
+    margin-bottom: -87px;
 
 }
 .partenaires {
@@ -87,6 +91,7 @@ aside {
 aside img{
     max-width: 100%;
     border-radius: 5px;
+    
 }
 article {
     float: left;
@@ -94,8 +99,12 @@ article {
     text-align: center;
     margin-top: 10%;
     background-color: #65656d;
-    margin-left: 25px;
+    margin-left: 20px;
     border-radius: 6px;
+}
+article {
+    padding-left: 3px;
+    padding-right: 3px;
 }
 article img {
     width: 20%;
@@ -107,25 +116,43 @@ article img {
 .partenaires img {
     width: calc(94%/4);
     margin-left: 10px;
+    filter: grayscale(100%);
+    transition-duration: 3s;
+}
+.partenaires img:hover{
+    filter: none;
+    transition-duration: 3s;
+    transform: rotate(0.5turn);
+}
+
+.presentation {
+    width: 480px;
+    margin: 25px auto 10px auto;
+    border: #65656d solid 10px;
+    border-radius: 5px;
+}
+.presentation img {
+    max-width: 100%;
+    margin-bottom: -4px;
 }
 footer {
     width: 100%;
     background-color: rgb(101, 101, 109);
     float: left;
     padding: 10px 10px;
+    margin-top: -83px;
 }
 .gmap {
-        /* -- Dimension & Positionnement -- */
+        
         width: calc( (100% / 3) - 10px);
         float: left;
-        /* -- Décoration -- */
+        
         margin-left: 10px;
     }
 .newsletter {
-        /* -- Dimension & Positionnement -- */
+        
         width: calc( (100% / 3) - 10px);
         float: left;
-        /* -- Décoration -- */
         margin-left: 10px;
     }
  .newsletter fieldset {
@@ -155,10 +182,8 @@ footer {
     } 
 
 .contact {
-        /* -- Dimension & Positionnement -- */
         width: calc( (100% / 3) - 10px);
         float: left;
-        /* -- Décoration -- */
         margin-left: 10px;
     }
 
@@ -183,9 +208,9 @@ footer {
 .contact address a:hover {
         text-decoration: underline;
     }
-    i {
+ i {
         color: #a29a11;
-    }
-    i:hover {
+}
+ i:hover {
         color: white;
     }

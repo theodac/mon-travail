@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
     background-image: url('../img/fond.png');
     background-size: cover;
+    overflow-x: hidden;
 }
 .page {
     width: 100%;
@@ -10,8 +11,9 @@ body {
     overflow: hidden;
     border-radius: 5px;
     background-color: white;
-    box-shadow: 0px 0px 15px #CCC;
-    font-family: 'Lora', serif;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    
 
 }
 .accroche {
@@ -22,33 +24,37 @@ body {
 /*-- TopHeader --*/
 .topheader {
     float: left;
-    height: auto;
-    width: 1000px;
+    height: 30px;
+    width: 100%;
     background-color: #4b4b53;
-    margin-bottom: 10px;
+    margin-bottom: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
 .topheader p {
     text-align: right;
     margin-right: 20px;
     color: #a29a11;
+    line-height: 4px;
 }
+
 /*-- Header --*/
 
 header {
     height: auto;
+    width: 100%;
+    float: left;
 }
 header img {
     float: left;
-    background-color: black;
-    width: 35%;
-    height: 73px;
+    background-color: rgb(255, 255, 255);
+    width: 10%;
+    height: 71px;
+    object-fit: contain;
 }
 header nav {
     float: left;
     background-color: #65656d;
-    width: 65%;
+    width: 90%;
     height: 73px;
-    
 }
 header ul {
     text-align: right;
@@ -60,6 +66,9 @@ header li {
     color: white;
 
 }
+.current a {
+    color: #a29a11;
+}
 a {
     color: white;
     text-decoration: none;
@@ -69,44 +78,51 @@ a:hover {
 }
 #projecteur {
     width: 100%;
-    height: 370px;;
     margin-top: -83px;
     margin-bottom: -87px;
 
 }
+#projecteur img {
+    width: 100%;
+}
 .partenaires {
     float: left;
 }
+.partenaires li {
+    display: inline
+}
 section {
     height: auto;
+    width: 100%;
     margin-bottom: 50px;
     float: left;
 }
-aside {
+section aside {
     float: left;
     width: 50%;
     margin-top: 30px;
     margin-left: 10px;
 }
-aside img{
+section aside img{
     max-width: 100%;
     border-radius: 5px;
-    
+    border: 9px solid #65656d;
 }
-article {
+
+section article {
     float: left;
     width: 45%;
     text-align: center;
-    margin-top: 10%;
     background-color: #65656d;
-    margin-left: 20px;
     border-radius: 6px;
+    margin-top: 90px;
+    margin-left: 25px;
 }
-article {
+section article {
     padding-left: 3px;
     padding-right: 3px;
 }
-article img {
+section article img {
     width: 20%;
     margin-top: 5px;
 }
@@ -114,15 +130,15 @@ article img {
     text-align: center;
 }
 .partenaires img {
-    width: calc(94%/4);
     margin-left: 10px;
     filter: grayscale(100%);
     transition-duration: 3s;
+    height: 70px;
 }
 .partenaires img:hover{
     filter: none;
     transition-duration: 3s;
-    transform: rotate(0.5turn);
+    transform: rotate(-0.01turn);
 }
 
 .presentation {
@@ -141,6 +157,11 @@ footer {
     float: left;
     padding: 10px 10px;
     margin-top: -83px;
+}
+footer >.page {
+    background-color: #65656d;
+    box-shadow: none;
+    
 }
 .gmap {
         

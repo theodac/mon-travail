@@ -13,15 +13,15 @@
         <!-- Top Header -->
         <div class="topheader">
             
-            <p>Espace Clients: <a href="#">Connexion</a>|<a href="#">Inscription</a></p>
+            <p>Espace Clients: <a href="index.html">Connexion</a>|<a href="#">Inscription</a></p>
         </div>
         <!-- Header -->
         <header>
-            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
             <nav>
                 <ul>
-                    <li class="current"><a href="index.html">Acceuil</a></li>
-                    <li><a href="presentation.html">Presentation</a></li>
+                    <li ><a href="index.html">Accueil</a></li>
+                    <li class="current"><a href="presentation.html">Presentation</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -69,42 +69,45 @@
     </div>
         <!-- Footer -->
         <footer>
-                <div class="gmap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.4937611631885!2d1.0378609157534946!3d49.47517936503297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0e7730084137d%3A0x92718c6b07c3ba91!2s10+Rue+de+Binche%2C+76150+Maromme!5e0!3m2!1sfr!2sfr!4v1508685628554" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="page">
+                    <div class="gmap">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2592.4937611631885!2d1.0378609157534946!3d49.47517936503297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e0e7730084137d%3A0x92718c6b07c3ba91!2s10+Rue+de+Binche%2C+76150+Maromme!5e0!3m2!1sfr!2sfr!4v1508685628554" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+                                
+                        </div>
+                        <div class="newsletter">
+                                <form name="newsletter" 
+                                        action="newsletter.php"
+                                        method="POST">
+            
+                                    <fieldset>
+                                        <legend>Newsletter</legend>
+                                        <input type="text" name="nom" placeholder="Nom">
+                                        <input type="text" name="prenom" placeholder="Prénom">
+                                        <input type="email" name="email" placeholder="Email" 
+                                            required>
+                                        <input type="submit" value="M'inscrire !">
+                                    </fieldset>
+            
+                                </form>
+                        </div>
+                        <div class="contact">
+                            <h3>Contactez-nous</h3>
+                            <address>
+                                <strong>DLR 76 </strong><br>
+                                <a href="tel:+330123456789"><i class="fa fa-phone" aria-hidden="true"></i> 01 23 45 67 89</a><br>
+                                <a href="mailto:dlr76@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> dlr76@gmail.com
+                                </a> <br>
+                                10 rue de binche<br>
+                                76150 Maromme <br>
+                                FRANCE <br>
+                               <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+        
+                            </address>
+                        </div>
 
-                        
-                </div>
-                <div class="newsletter">
-                        <form name="newsletter" 
-                                action="newsletter.php"
-                                method="POST">
-    
-                            <fieldset>
-                                <legend>Newsletter</legend>
-                                <input type="text" name="nom" placeholder="Nom">
-                                <input type="text" name="prenom" placeholder="Prénom">
-                                <input type="email" name="email" placeholder="Email" 
-                                    required>
-                                <input type="submit" value="M'inscrire !">
-                            </fieldset>
-    
-                        </form>
-                </div>
-                <div class="contact">
-                    <h3>Contactez-nous</h3>
-                    <address>
-                        <strong>DLR 76 </strong><br>
-                        <a href="tel:+330123456789"><i class="fa fa-phone" aria-hidden="true"></i> 01 23 45 67 89</a><br>
-                        <a href="mailto:dlr76@gmail.com">
-                        <i class="fa fa-envelope" aria-hidden="true"></i> dlr76@gmail.com
-                        </a> <br>
-                        10 rue de binche<br>
-                        76150 Maromme <br>
-                        FRANCE <br>
-                       <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
-
-                    </address>
-                </div>
+            </div>
         </footer>
     
     

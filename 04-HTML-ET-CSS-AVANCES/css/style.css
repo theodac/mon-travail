@@ -25,7 +25,11 @@ body {
 .topheader {
     float: left;
     height: 30px;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 1000px;
+>>>>>>> 6d1444b676bb9cce79bff6ef95cba8ca6d9a48df
     background-color: #4b4b53;
     margin-bottom: 10px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
 }
@@ -33,7 +37,11 @@ body {
     text-align: right;
     margin-right: 20px;
     color: #a29a11;
+<<<<<<< HEAD
     line-height: 4px;
+=======
+    line-height: 30px;
+>>>>>>> 6d1444b676bb9cce79bff6ef95cba8ca6d9a48df
 }
 
 /*-- Header --*/

@@ -1,0 +1,284 @@
+body {
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+}
+
+main {
+    /* -- Ma page fera 1300px de large -- */
+    max-width: 1300px;
+    width: 100%;
+    /* -- Sa hauteur s'adaptera en fonction du contenu -- */
+    height: auto;
+    /* -- Elle sera centrée au milieu de la page -- */
+    margin: 0 auto;
+    position: relative;
+    
+}
+.mt-40 {
+    margin-top:40px;
+}
+
+main > p {
+    font-family: Arial;
+    color:  #ffffff;
+    font-size: 13px;
+    text-align: center;
+}
+
+main > p span {
+    text-decoration: underline;
+}
+/* -----------------------------
+            HEADER
+------------------------------ */
+
+header {
+    /* -- Dimensions et Posionnement -- */
+       width: 100%;
+    height: 50px;
+    float: left;
+    position: relative; 
+    z-index: 10;
+
+    /* -- Décoration -- */
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #dddddd 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #dddddd 100%);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.65);
+    border-top-left-radius: 15px;
+}
+/* -----------------------------
+           TRADUCTION
+------------------------------ */
+
+header > div {
+    width: 25%;
+    height: 19px;
+    margin: 15px 0 0 30px;
+    float: left;
+}
+
+header > div > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: black;
+    text-transform: uppercase;
+    float: left;
+    margin: 4px 5px 0 0;
+}
+
+/* -- Drapeau FR -- */
+header > div > a:nth-child(2) {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    text-indent: -9000px;
+    background: url(../img/drapeaux.png) no-repeat;
+    background-position: -71px 4px;
+    transition: 0.1s ease-in-out;
+    filter: grayscale(100%)
+}
+
+header > div > a:nth-child(2):hover,
+header > div > a:last-child:hover {
+    background-position-y: 0px;
+    filter: none;
+}
+
+/* -- Drapeau EN -- */
+header > div > a:last-child {
+    display: block;
+    width: 28px;
+    height: 19px;
+    float: left;
+    text-indent: -9000px;
+    background: url(../img/drapeaux.png) no-repeat;
+    background-position: -107px 4px;
+    margin-left: 5px;
+    transition: 0.1s ease-in-out;
+    filter: grayscale(100%)
+}
+/* -----------------------------
+           NAVIGATION
+------------------------------ */
+ header >nav {
+     width:auto;
+     height: auto;
+     float: right;
+     margin-right: 175px;
+
+ }
+ header >nav ul {
+    margin: 0;
+    padding: 0;
+ }
+ header >nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+
+ }
+ header >nav ul li a {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    color:  #202020;
+    font-size: 16px;
+    line-height: 48px;
+ }
+ header >nav ul li a:hover {
+    text-decoration: underline;
+}
+header >nav ul li.current a {
+    color: #3860a7;
+    
+
+}
+header >nav ul li:nth-child(3) a {
+    color: #fe3626;
+    text-decoration: underline;
+}
+/* -----------------------------
+           PROJECTEUR
+------------------------------ */
+.projecteur {
+    width: 100%;
+    height: 316px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.overlay img{
+    width: 100%;
+    height: 247px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+.overlay p {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    left: 56%;
+    top: 15%;
+    color:  #ffffff;
+    font-size: 50px;/* Approximation causée par une substitution de police */
+    text-align: center;
+    z-index: 3;
+}
+.projecteur .baya {
+    /*-- Dimension et Positionnement -- */
+    position: absolute;
+    left: 175px;
+    top:0px;
+    /* -- Décoration -- */
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    width: 340px;
+    height: 247px;
+    z-index: 4;
+    border-left:5px solid #c43e3e;
+}
+.projecteur .baya img {
+    margin-top: 30px;
+    margin-left: 70px;
+    height: 190px;
+}
+.projecteur nav {
+    position: absolute;
+    bottom: 0px;
+    left: 175px;
+    width: 1150px;
+    height: 69px;
+    background: -webkit-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -moz-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -o-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: -ms-linear-gradient(-90deg, #fbfbfb 0%, #bbbbbb 100%);
+    background: linear-gradient(180deg, #fbfbfb 0%, #bbbbbb 100%);
+    border-left:5px solid #c43e3e;
+    
+}
+.projecteur >nav ul {
+    margin-left: 120px;
+}
+.projecteur >nav ul li {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 40px;
+    
+}
+.projecteur >nav ul li:first-child a::before {
+    width: 147px;
+    height: 36px;
+    background: url(../img/fleche.png);
+    content: " ";
+    position: absolute;
+    top:15px;
+    left:30px;
+}
+.projecteur nav ul li a {
+    text-decoration: none;
+}
+.projecteur nav ul li span {
+    font-size: 14px;
+    text-align: left;
+    font-style: italic;
+}
+
+/* -- Decoration des liens -- */
+.projecteur nav ul li:first-child a {
+    color: #bc8242;
+    
+}
+
+.projecteur nav ul li:nth-child(2) a {
+    color: #3860a7;
+}
+.projecteur nav ul li:last-child a {
+    color:  #08a640;
+}
+/* -----------------------------
+        BANDEAU
+------------------------------ */
+.bandeau1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    float: left;
+    background-color:  #fe3224;    
+    height: 50px;
+    font-size: 30px;/* Approximation causée par une substitution de police */
+    text-align: center;
+    color: white;
+}
+.bandeau1 p {
+    margin-top: 8px;
+}
+.bandeau2 {
+    background: -webkit-radial-gradient(circle  at 50%, #ffffff 0%, #febeb9 100%);
+    background: -moz-radial-gradient(circle  at 50%, #ffffff 0%, #febeb9 100%);
+    background: -o-radial-gradient(circle  at 50%, #ffffff 0%, #febeb9 100%);
+    background: -ms-radial-gradient(circle  at 50%, #ffffff 0%, #febeb9 100%);
+    background: radial-gradient(circle  at 50%, #ffffff 0%, #febeb9 100%);
+    width: 100%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Times New Roman';
+    color:  #000000;
+    position: relative;
+}
+/*-- Fleur --*/
+.fleur {
+    text-align: center;
+
+}
+.fleur img {
+    margin-top: 30px;
+}

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Heebo');
+a, h1, h3 {
+    font-family: 'Heebo', sans-serif;
+}
+header a {
+    /* -- Plusieurs façons de définir une couleur -- */
+
+    /* -- Mot Clé de la Couleur -- */
+    color: black;
+
+    /* -- Notation Hexadécimale -- */
+    color:#000000;
+    color:#000;
+
+    /* -- Notation Décimale -- */
+    color:rgb(000, 000, 000);
+
+    /* -- Gérer le soulignement de mon texte -- */
+    text-decoration: none;
+
+    /* -- Modifier la taille de la police -- */
+    font-size: 20px;
+
+    /* -- Je souhaite que mes liens s'affiche en Majuscule -- */
+    text-transform: uppercase;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+}
+header ul li {
+    display: inline-block;
+    text-align: center;
+}
+a:hover {
+    color:#9f60a9;
+}
+.current a {
+    color: #C71225;
+}
+main {
+
+    max-width:960px;
+
+    margin: 0 auto;
+
+    background: rgba(148, 139, 139, 0.527);
+    
+}
+body {
+
+    background: url('../img/wallpaaper.jpg') ;
+}
+section >div h1 {
+
+    text-align: center;
+
+
+    font-weight: normal;
+
+
+    border-bottom: 5px solid #C71225;
+}
+header ul {
+    margin-top: 20px;
+    text-align: center;
+}
+header ul li {
+    margin-right: 60px; 
+}
+header ul li:first-child {
+    margin-left: 75px;
+}
+
+header a:hover {
+    color: #C71225;
+}
+.bandeau {
+    width: 100%;
+    height: 420px;
+    background: url(../img/banniere.jpg) no-repeat;
+    background-size: contain;
+}
+.bandeau img {
+    margin-left: 60px;
+    margin-top: 170px;
+}
+section {
+    margin-bottom: 30px;
+}
+aside img {
+    max-width:100%;
+
+} 
+aside .loupe {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+}
+article {
+    font-family: 'Heebo', sans-serif;
+    text-align: justify;
+}
+footer {
+    margin-top: 0px;
+
+}
+/*-- Newsletter --*/
+.newsletter {
+    
+    margin-bottom: 10px;
+   
+}
+.newsletter form {
+
+}
+.newsletter fieldset {
+    font-family: 'Roboto Condensed' , sans-serif;
+    border-radius: 8px;
+    border: 3px solid #C71225;
+    color: #C71225;
+    height: 180px;
+
+}
+legend {
+    border-bottom: 0px;
+    margin-bottom: 10px;
+    width: 35%;    
+
+}
+.newsletter input {
+    width: 91%;
+    height: 25px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+
+}
+.newsletter input[type=submit] {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*-- Contact --*/
+.contact {
+    color: black;
+}
+.contact h3 {
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Roboto Condesed',sans-serif;
+
+
+}
+.contact address {
+    padding-left: 20px;
+
+}
+.contact address strong {
+    font-size: 20px;
+}
+.contact address a{
+    text-decoration: none;
+    color: rgb(36, 33, 33)
+}
+.contact address a:hover {
+    text-decoration: underline;
+}
+.video h3 {
+    text-align: center;
+}

@@ -24,41 +24,79 @@
 <body>
     <!-- Contenu HTML -->
     <div class="container-full">
-        <div class="projecteur">
+        <div class="projecteur" class="col-xs-12">
+            
             
             <div class="row">
-                <img src="./img/fond.jpg" alt="">
-                <nav class="col-sm-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                        
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <img src="./img/fond.jpg" alt="Los Angeles" style="width:100%;">
+                              </div>
+                        
+                              <div class="item">
+                                <img src="./img/fond-vid.jpg" alt="Chicago" style="width:100%;">
+                              </div>
+                            
+                              <div class="item">
+                                <img src="./img/serie1.jpg" alt="New york" style="width:100%;">
+                              </div>
+                            </div>
+                        
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                              <span class="glyphicon glyphicon-chevron-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                              <span class="glyphicon glyphicon-chevron-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div>
+                <nav class="col-xs-12">
                     <ul>
-                        <li class="col-sm-4"><a href="index.html" class="current" >Acceuil</a></li>
-                        <li class="col-sm-4"><a href="#" >Nos Videos</a></li>
-                        <li class="col-sm-4"><a href="#" >Nos Photos</a></li>
+                        <li><a href="index.html" class="current" >Acceuil</a></li>
+                        <li><a href="#" >Nos Videos</a></li>
+                        <li><a href="#" >Nos Photos</a></li>
                     </ul>
                 </nav>  
             </div> <!-- /.row -->
         </div> <!-- /.projecteur -->
-        <section id="nos-videos">
+        <section id="nos-videos" >
             <div class="row">
                 <h2>Sortie de la semaine</h2>
             </div>
             <div class="row">
-                <iframe  height="350" src="https://www.youtube.com/embed/RtG6scyBIeM" frameborder="0" allowfullscreen class="col-sm-6"></iframe>
-                <iframe height="350" src="https://www.youtube.com/embed/QxiztUnTivE" frameborder="0" allowfullscreen class="col-sm-6"></iframe>
+                <iframe  height="350" src="https://www.youtube.com/embed/RtG6scyBIeM" frameborder="0" allowfullscreen class="col-md-6"></iframe>
+                <iframe height="350" src="https://www.youtube.com/embed/QxiztUnTivE" frameborder="0" allowfullscreen class="col-md-6"></iframe>
+                
             </div>
         </section>
         <section id="nos-photos">
             <div class="row">
-                    <img src="./img/serie1.jpg" alt="" class="col-sm-3" height="200px;">
-                    <img src="./img/serie2.jpg" alt="" class="col-sm-3" height="200px;">
+                    <img src="./img/serie1.jpg" alt="serie1" class="col-sm-3" height="200px;">
+                    <img src="./img/serie2.jpg" alt="serie2" class="col-sm-3" height="200px;">
                         <h2>Top séries de la semaine</h2>
                         <br>
                         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ultrices leo dictum, viverra felis lacinia, sollicitudin justo. Proin mattis ultrices risus nec eleifend. Nulla aliquet pellentesque tempor. Donec mollis dolor interdum, finibus neque ac, vulputate metus. In sodales semper finibus. Integer ante augue, euismod et vulputate eget, bibendum ut quam. Mauris tincidunt scelerisque elementum. Vestibulum nisl ante, facilisis in eros sed, vulputate luctus purus. Nunc scelerisque, nisi sit amet auctor luctus, nisl ligula suscipit quam, eget finibus neque justo vitae nulla. Nulla faucibus nec lacus vulputate iaculis. Phasellus nisi urna, vulputate in massa at, consequat facilisis mi. Aenean consequat sapien lectus, eu dignissim ex convallis in. Pellentesque lobortis laoreet massa, a facilisis justo scelerisque vitae. Sed tempor porttitor pellentesqu
                         </p>
-                    <img src="./img/serie3.jpg" alt="" class="col-sm-3" height="200px;">
-                    <img src="./img/serie4.jpg" alt="" class="col-sm-3" height="200px;">
-                    <img src="./img/serie5.jpg" alt="" class="col-sm-3" height="200px;">
-                    <img src="./img/serie6.jpg" alt="" class="col-sm-3" height="200px;">
             </div>
+            <div class="row">
+                    <img src="./img/serie3.jpg" alt="serie3" class="col-md-3 col-sm-6" height="200px;">
+                    <img src="./img/serie4.jpg" alt="serie4" class="col-md-3 col-sm-6" height="200px;">
+                    <img src="./img/serie5.jpg" alt="serie5" class="col-md-3 col-sm-6" height="200px;">
+                    <img src="./img/serie6.jpg" alt="serie6" class="col-md-3 col-sm-6" height="200px;">
+            </div>
+            
         </section>
         <section id="video-suite">
             <h2>A venir :</h2>

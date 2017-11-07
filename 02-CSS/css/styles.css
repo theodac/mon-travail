@@ -11,11 +11,12 @@
 
 /* Ajout de Google Font */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Heebo');
 
 /* -- Je cible dans ma page HTML, tous les éléments A,
     tous les éléments H1 et tous les éléments H3 -- */
 a, h1, h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 /* ------------------------------------------------------------
@@ -90,7 +91,7 @@ a, h1, h3 {
 -- */
 
 a:hover {
-    color:#78356b;
+    color:#9f60a9;
 }
 
 /* --
@@ -99,8 +100,7 @@ a:hover {
 -- */
 
 .current a {
-    color: #78356b;
-    font-weight: bold;
+    color: #C71225;
 }
 
 /* ------------------------------------------------------------
@@ -121,7 +121,8 @@ a:hover {
     margin: 0 auto;
 
     /* -- Je rajoute à ma page un fond blanc -- */
-    background: #FFF;
+    background: rgba(148, 139, 139, 0.527);
+    
 }
 
 /* --
@@ -130,8 +131,7 @@ a:hover {
 
 body {
     /* -- Je viens de changer la couleur du fond de page -- */
-    background: url(../img/fond2.jpg) no-repeat;
-    background-size: cover;
+    background: url('../img/wallpaaper.jpg') ;
 }
 
 /* ---------------------
@@ -155,8 +155,6 @@ CONSIGNE :
 
     /* -- J'applique une marge interne ed 5px autour de #page -- */
     padding: 5px;
-
-    /* -- Overflow avec la valeur hidden, va supprimer l'affichage des tous les éléments qui dépassent de la div#page -- */
     overflow: hidden;
 }
 
@@ -169,170 +167,167 @@ CONSIGNE :
 
     /* -- solid : Ligne par défaut, dotted : Petits-Points, 
     dashed : des traits d'union -- */
-    border-bottom: 1px dashed #000;
+    border-bottom: 5px solid #C71225;
+}
+.header ul {
+    margin-top: 20px;
 }
 
+.header a:hover {
+    color: #C71225;
+}
 .BandeauDuHaut {
     width: 100%;
-    height: 240px;
-    background: url(../img/bandeau-saint-marc-colored.jpg) no-repeat;
+    height: 420px;
+    background: url(../img/banniere.jpg) no-repeat;
     background-size: contain;
 }
-
-/* --
-    CSS pour Illustration et Article
-    -- */
-
+.BandeauDuHaut img {
+    margin-left: 60px;
+    margin-top: 170px;
+}
+/* -- CSS pour Illustration et Article --*/
 .contenu {
-    /* -- Dimension & Positionnement -- */
+    /*-- Dimension & Positionnement --*/
     width: 100%;
     height: auto;
     float: left;
-    /* -- Décoration -- */
+    /*-- Décoration--*/
 }
-
-.contenu span {
-    color:#a51f8b;
-}
-
-.contenu.txt {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.contenu.txt img {
-    padding: 5px;
-    border: 1px solid #CCC;
-    border-radius: 5px;
-}
-
 .illustration {
-    /* -- Dimension & Positionnement -- */
-    width: 470px;
+
+    /*-- Dimension & Positionnement --*/
+    width: 480px;
     height: auto;
     float: left;
-    /* -- Décoration -- */
-    margin-right: 10px;
+    position: relative;
+    /*-- Décoration--*/
 }
-
 .illustration img {
     max-width: 100%;
+    border-radius: 10px 10px;
 }
-
+.illustration .loupe {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 70px;
+}
 .article {
-    /* -- Dimension & Positionnement -- */
+
+    /*-- Dimension & Positionnement --*/
     width: 460px;
     height: auto;
     float: left;
-    /* -- Décoration -- */
-    margin: 0 10px 0 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    /*-- Décoration--*/
+    margin: -15px 10px 0 10px;
+    font-family: 'Heebo', sans-serif;
     text-align: justify;
+    
+
 }
+.article p{
 
-/* --
-    Style de mon Pied de Page
-    -- */
+}
+/*--
+    Style de mon pied de page
+--*/
 
-.footer {
-    /* -- Dimension & Positionnement -- */
+.footer  {
+    /*-- Dimension et Positionnement --*/
     width: 100%;
-    /* -- Un hauteur de 210px -- */
-    height: 210px;
-    /* -- Positionnement -- */
+    /*-- Hauteur auto  --*/
+    height: auto;
+    /*-- Positionnement --*/
     float: left;
-    /* -- Décoration -- */
-    background-color: #78356b;
-    padding-top: 10px;
+    /*-- Décoration  --*/
+    margin-top: 10px;
+    
 }
+/*-- Google Maps --*/
+.gmap {
+    
+    /*-- Dimension et Positionnement --*/
+    width: calc((100%/3) - 10px);
+    float: left;
+    height: auto;
+    /*-- Décoration  --*/
+    margin-left: 10px;
+}
+/*-- Newsletter --*/
+.newsletter {
+    float: left;
+    width: calc((100%/3) - 10px);
+    height: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+   
+}
+.newsletter form {
 
-/* -- 
-    Ici, je souhaite que mes 3 blocks soient positionnés, les un à côté des autres, ...
-    Mon pied de page étant égale à 960px, je divise par mon nombre de blocks (3) tous en tenant compte des marges.
--- */
+}
+.newsletter fieldset {
+    font-family: 'Roboto Condensed' , sans-serif;
+    border-radius: 8px;
+    border: 3px solid #C71225;
+    color: #C71225;
+    height: 180px;
 
-/* --
-    GOOGLE MAP
-    -- */
+}
+.newsletter legend {
 
-    .gmap {
-        /* -- Dimension & Positionnement -- */
-        width: calc( (100% / 3) - 10px);
-        float: left;
-        /* -- Décoration -- */
-        margin-left: 10px;
-    }
 
-/* --
-    NEWSLETTER
-    -- */
+}
+.newsletter input {
+    width: 91%;
+    height: 25px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
 
-    .newsletter {
-        /* -- Dimension & Positionnement -- */
-        width: calc( (100% / 3) - 10px);
-        float: left;
-        /* -- Décoration -- */
-        margin-left: 10px;
-    }
+}
+.newsletter input[type=submit] {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*-- Contact --*/
+.contact {
+    width: calc((100%/3) - 10px);
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+    color: black;
+}
+.contact h3 {
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Roboto Condesed',sans-serif;
 
-    .newsletter form {}
 
-    .newsletter fieldset {
-        font-family: 'Roboto Condensed', sans-serif;
-        border-radius: 8px;
-        border: 2px solid #FFF;
-        color: #FFF;
-        height: 180px;
-    }
+}
+.contact address {
+    padding-left: 20px;
 
-    .newsletter legend {}
-
-    .newsletter input {
-        width: 91%;
-        height: 25px;
-        margin-bottom: 5px;
-        padding: 5px 10px;
-    }
-
-    .newsletter input[type=submit] {
-        width: 100%;
-        height: 30px;
-        border: 0;
-        background: #FFF;
-        font-size: 15px;
-        font-weight: bold;
-        cursor: pointer;
-    } 
-
-/* --
-    CONTACT
-    -- */
-
-    .contact {
-        /* -- Dimension & Positionnement -- */
-        width: calc( (100% / 3) - 10px);
-        float: left;
-        /* -- Décoration -- */
-        margin-left: 10px;
-    }
-
-    .contact h3 {
-        color: #FFF;
-        padding-left: 20px;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: normal;
-    }
-    .contact address {
-        color: #FFF;
-        padding-left: 20px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-    .contact address strong {
-        font-size: 20px;
-    }
-    .contact address a {
-        color: #FFF;
-        text-decoration: none;
-    }
-    .contact address a:hover {
-        text-decoration: underline;
-    }
+}
+.contact address strong {
+    font-size: 20px;
+}
+.contact address a{
+    text-decoration: none;
+    color: rgb(36, 33, 33)
+}
+.contact address a:hover {
+    text-decoration: underline;
+}
+.video {
+    margin-left: 40px;
+    float: left
+}
+.video h3 {
+    text-align: center;
+    font-size: 26px;
+}

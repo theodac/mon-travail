@@ -1,0 +1,24 @@
+.bandeau {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    animation: example;
+    animation-duration: 10s;
+
+}
+.bandeau:hover {
+    transform: rotate(180deg)
+}
+@keyframes example {
+    from{background-color:rgb(255, 0, 191);}
+    to {background-color: rgb(51, 255, 0);}
+}
+.img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: blue;
+    width: 100%;
+    height: 50px;
+}

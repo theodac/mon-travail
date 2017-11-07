@@ -2,37 +2,58 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Campus St Marc | 7 écoles au coeur de Rouen</title>
+        <title>Aujourd'hui, CSS en Folie !</title>
         <!-- METHODE 1 : Ajouter un Fichier CSS à ma Page -->
         <link rel="stylesheet" href="css/styles.css">
-        <!-- FontAwesome.io -->
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
         <div id="page">
             <div class="header">
-                <div class="BandeauDuHaut"></div>
+                <div class="BandeauDuHaut">
+                    <a href="#"><img src="img/fma.gif" alt="logo" height="100px"></a>
+                </div>
                 <ul>
                     <li class="current">
-                        <a href="index.html">Accueil</a>
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Accueil</a>
                     </li>
-                    <li><a href="presentation.html">Présentation</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fa fa-address-card" aria-hidden="true"></i>
+                        Présentation</a></li>
+                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
                 </ul>
             </div> <!-- ./header -->
             <div class="contenu">
-                <h1>Le Campus Saint-Marc</h1>
+                <h1>Full Metal Alchemist</h1>
                 <div class="illustration">
                     <img src="img/illustration.jpg" 
-                        alt="Campus Saint-Marc">
+                        alt="Alchimiste Full Metal">
                 </div>
                 <div class="article">
-                    <p>« 80 % des métiers d’aujourd’hui auront disparu dans 20 ans » disent les experts.</p>
+                    <p>Fullmetal Alchemist (鋼の錬金術師, Hagane no Renkinjutsushi?, littéralement « L'Alchimiste d'acier », souvent abrégé en Hagaren (ハガレン?) ou en FMA)</p>
                     
-                    <p>Les métiers du <span>management</span>, du <span></span>marketing</span>, de la <span>santé</span>, du<span>bien être</span> survivront mais <u>les pratiques vont significativement évoluer...</u> C’est la conviction du Campus Saint Marc. Hyper connexion, dématérialisation, mondialisation : l’environnement dans lequel nous vivons nous amène sans cesse à <span>découvrir de nouveaux outils</span>, à concevoir de nouveaux process.</p>
+                    <p>est un manga d'Hiromu Arakawa. Il a été prépublié entre 2001 et 2010 dans le magazine mensuel Shōnen Gangan de la société Square Enix et a été compilé en 27 volumes reliés.</p>
                     
-                    <p>Dans un tel contexte, <u>il faut former des esprits créatifs, flexibles et entreprenants.</u> Les dernières innovations du campus saint marc <span>vont précisément dans ce sens</span> avec le lancement de l’accélérateur de startups   <span>NFactory</span>.</p>
+                    <p>La version française est publiée par Kurokawa depuis 2005.</p>
+                    <p>Il a été adapté en série d'animation diffusée au Japon entre 2003 et 2004, un film sorti en 2005, des OAV sortis en 2006 ainsi que plusieurs jeux vidéo. Entre 2009 et 2010, est diffusée une nouvelle adaptation animée intitulée Fullmetal Alchemist: Brotherhood et reprenant la trame du manga de manière plus fidèle.</p>
                 </div>
+                <div class="article">
+                    <p>Il a été adapté en série d'animation diffusée au Japon entre 2003 et 2004, un film sorti en 2005, des OAV sortis en 2006 ainsi que plusieurs jeux vidéo</p>
+                    
+                    <p> Entre 2009 et 2010, est diffusée une nouvelle adaptation animée intitulée Fullmetal Alchemist: Brotherhood et reprenant la trame du manga de manière plus fidèle.</p>
+                    
+                    <p>La version française est publiée par Kurokawa depuis 2005.</p>
+                    <p>Il a été adapté en série d'animation diffusée au Japon entre 2003 et 2004, un film sorti en 2005, des OAV sortis en 2006 ainsi que plusieurs jeux vidéo. Entre 2009 et 2010, est diffusée une nouvelle adaptation animée intitulée Fullmetal Alchemist: Brotherhood et reprenant la trame du manga de manière plus fidèle.</p>
+                </div>
+                <div class="illustration">
+                    <img src="img/illustration2.jpg" 
+                        alt="Alchimiste Full Metal">
+                    <img src="img/loupe.png" alt="Loupe" class="loupe">
+                </div>
+                <div class="video">
+                    <h3>Extrait</h3>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/rLoKcKz1TYo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                
             </div> <!-- ./contenu -->
             <div class="footer">
                 <div class="gmap">
@@ -55,16 +76,19 @@
                     </form>
                 </div>
                 <div class="contact">
-                    <h3>Contactez-nous</h3>
                     <address>
-                        <strong>Campus Saint-Marc</strong><br>
-                        <a href="tel:+330232102501"><i class="fa fa-phone" aria-hidden="true"></i> 02 32 10 25 01</a><br>
-                        <a href="mailto:campussaintmarc@gmail.com">
-                                <i class="fa fa-envelope" aria-hidden="true"></i> campussaintmarc@gmail.com
+                        <h3>Contactez Nous</h3>
+                        <strong>Academie D'Alchimiste</strong> <br>
+                        <a href="tel:+330232102501"><i class="fa fa-phone" aria-hidden="true"></i>01 23 45 67 89</a><br>
+                        <a href="mailto:campussaintmarc@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>
+                            adressebidon@gmail.com
                         </a> <br>
-                        18/28 Place Saint-Marc,<br>
+                        <i class="fa fa-home" aria-hidden="true"></i>18/28 Place Saint-Marc,
                         76000 Rouen<br>
-                        FRANCE
+                        FRANCE <br>
+                        <a href="www.facebook.com" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </address>
                 </div>
             </div> <!-- ./footer -->

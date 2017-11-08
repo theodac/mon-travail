@@ -27,3 +27,8 @@ var age = 20 ;
 var phrase3 ="ans ! ";
 
 document.write(phrase1 + phrase2 + age + phrase3);
+for (var i = 0; i<numberOfQuestions; i++){
+    data[i] = new Array();
+    data[i][0] = something;
+    data[i][1] = somethingElse;
+   }

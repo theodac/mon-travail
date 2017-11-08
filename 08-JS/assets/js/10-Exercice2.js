@@ -11,7 +11,7 @@ II. Afficher sur la page (à l'aide de document.write) pour chaque étudiant, la
 */
 
 // Declarer son tableau numerique
-var matiere = {Francais:19,Mathematique:18,Sciences:18,EPS:16,Anglais:15 }
+
 
 var PremierTrimestre = [
     
@@ -19,11 +19,11 @@ var PremierTrimestre = [
             prenom      : "Theo ",
             nom         : "DA COSTA ",
             note        : {
-                              Francais     : 19,
-                              Mathematique : 18,
-                              Sciences     : 18,
-                              EPS          : 15,
-                              Anglais      : 17
+                              "Francais"     : 19,
+                              "Mathematique" : 18,
+                              "Sciences"     : 18,
+                              "EPS"         : 15,
+                             "Anglais"     : 17
                               
                           }
         },
@@ -31,11 +31,11 @@ var PremierTrimestre = [
             prenom      : "Gauthier ",
             nom         : "BOSSON ",
             note        : {
-                              Francais     : 1,
-                              Mathematique : 2,
-                              Sciences     : 4,
-                              EPS          : 3,
-                              Anglais      : 0
+                             "Francais"    : 1,
+                             "Mathematique" : 2,
+                              "Sciences"     : 4,
+                             "EPS"          : 3,
+                              "Anglais"      : 0
                               
                           }
         },
@@ -78,8 +78,23 @@ var PremierTrimestre = [
         },
     
     ];
-    
     console.log(PremierTrimestre);
-    for(let i = 0 ; i<=4 ; i++){
-        document.write("<ul><li>" + PremierTrimestre[i].prenom  + PremierTrimestre[i].nom + "</li></ul><hr/><br>")
+    var moyenne = PremierTrimestre.note;
+    for(let i = 0 ; i<5 ; i++){
+        document.write("<ul><li>" + PremierTrimestre[i].prenom +  PremierTrimestre[i].nom + "Francais : " +PremierTrimestre[i].note.Francais +  "</li></ul><hr/><br>")
+        document.write("<ul><li>" + PremierTrimestre[i].note + "</li></ul>") 
     }
+    var j = 0;
+    while(j < PremierTrimestre.length) {
+        document.write("<ul><li>" + PremierTrimestre[j] + "</li></ul>");
+        j++;
+    }
+    
+
+    // for(var note in PremierTrimestre){
+       
+    //     document.write("<ul><li>" + PremierTrimestre.note + "</li></ul>")
+       
+    // }
+    
+    

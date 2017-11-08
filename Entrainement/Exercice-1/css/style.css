@@ -1,0 +1,78 @@
+body {
+    background: url(../img/fond.jpg)no-repeat;
+    background-size: cover;
+}
+main {
+    background-color: rgba(56, 53, 53, 0.86);
+    width: 100%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bandeau {
+    position: relative;
+
+}
+.bandeau img {
+    width: 100%;
+}
+header {
+    float: left;
+    width: 100%
+}
+nav {
+    
+    position: absolute;
+    top: 0px;
+    left: 1px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(110, 173, 37, 0.88);
+}
+
+
+nav ul {
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    width: 33%;
+    position: relative;
+}
+nav ul li a {
+    color: orangered;
+}
+nav ul li a:hover {
+    color: fuchsia;
+
+}
+section {
+    float: left;
+    margin-top: 30px;
+}
+section aside {
+    float: left;
+    margin-right: 20px;
+}
+section article {
+    float: left;
+    width: 460px;
+}
+section article h2 {
+    color: fuchsia;
+}
+section article p {
+    color: orangered;
+
+}
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: orangered;
+}
+
+footer a img {
+    width: 50px;
+}

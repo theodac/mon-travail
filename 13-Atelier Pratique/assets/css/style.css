@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+body {
+
+}
+.container-full{
+padding: 0px;
+margin:0px;
+}
+.nav1{
+    padding: 0px;
+    margin:0px;
+}
+.nav1 ul{
+    text-align: center;
+
+
+}
+.nav1 ul li {
+    display: inline-block;
+    margin-left:70px; 
+}
+.nav1 ul li a{
+    color:  #ffffff;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.nav1 ul li a:hover{
+    
+    color: rgb(39, 134, 163);
+}
+nav1 ul li:first-child a img {
+    margin-top: -7px;
+}
+.nav2{
+    padding: 0px;
+    margin:0px;
+}
+.nav2 ul{
+    text-align: center;
+}
+.nav2 ul li {
+     display: inline;
+     list-style: none;
+}
+.nav2 ul li a{
+    
+}
+.nav2 ul li a:hover{
+    
+}
+.nav2 ul li a img {
+   
+}
+.sec1 {
+    padding: 0px;
+    margin:0px;
+}
+.sec1 .banniere{
+    position: relative;
+}
+.sec1 .banniere img {
+
+}
+.sec1 .rdv{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform:translateX(-50%); 
+}
+.sec1 .rdv h2{
+
+}
+.sec1 .rdv p{
+    color: red;
+}
+.sec2 {
+    padding: 0px;
+    margin:0px;
+}
+.sec2 .iphone{
+
+}
+.sec2 .iphone img{
+
+}
+.sec2 .echange{
+
+}
+.sec2 .echange h2{
+
+}
+.sec2 .echange p{
+
+}
+.sec2 .echange p a{
+
+}
+.sec2 .echange p :hover{
+
+}
+.sec3{
+    padding: 0px;
+    margin:0px;
+}
+.sec3 h2{
+
+}
+.sec3 form {
+
+}
+.sec3 form input{
+
+}
+.footer{
+    padding: 0px;
+    margin:0px;
+}
+.footer p {
+
+}

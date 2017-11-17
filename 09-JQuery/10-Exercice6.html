@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 6 - FINAL</title>
+    <style>
+        .pseudoError, .ageError {
+            width: 200px;
+            height: 20px;
+            background-color: yellow;
+            color: red;
+            display: none;
+        }
+        .ageError {
+            width: 360px;
+        }
+    </style>
+    <!-- 
+        CONSIGNE : 
+
+Considérons un Formulaire HTML avec les champs pseudo, age, email et mdp.
+Considérons un Tableau JS contenant une liste de membre.
+
+---------
+
+ETAPE 1 : Lors de la saisie d'un Pseudo, vérifiez en temps réel grâce aux évènements que celui-ci n'existe pas dans le tableau de membre.
+
+Si le Pseudo existe dans le tableau Membre, la notification pseudoError doit s'afficher et le bouton "submit" être désactivé.
+
+A l'inverse, si le Pseudo n'existe pas dans le tableau Membre, ou que l'utilisateur à corriger son Pseudo, alors, le bouton est actif et la notification pseudoError ne s'affiche pas / plus.
+
+---------
+
+ETAPE 2 : L'inscription n'est possible qu'aux personnes majeurs de 18 ans.
+Vous devez donc vérifier que l'age saisi est bien supérieur ou égale à 18 ans.
+
+Si cette condition n'est pas valide, alors la notification ageError doit s'afficher et le bouton "submit" être désactivé.
+
+Quand l'utilisateur corrige son age, la situation revient à la normal. La notification ageError ne s'affiche plus et le bouton submit est de nouveau disponible.
+
+---------
+
+ETAPE 3 : 
+   
+Lors de la saisie du Pseudo, vous devrez afficher en temps réel dans le titre id "Bienvenue" : Bonjour [Pseudo] : Pseudo étant la saisie en cours de l'utilisateur.
+  
+---------
+  
+  ETAPE 4 : Si toutes les conditions sont validées, l'utilisateur va pouvoir procéder à son inscription.
+  
+  En cliquant sur le bouton "M'inscrire", vous devrez enclancher une action permettant :
+  
+      A. L'ajout de l'utilisateur dans le tableau.
+      B. L'affichage pour l'utilisateur sur la page d'un message de bienvenue, ainsi que la liste des membres inscrit dans une liste non-ordonnée.
+      
+      Ex. Merci Hugo ! Tu es maintenant inscrit.
+      Voici la liste de nos Membres :
+      
+          Hugo : 26ans
+          Rodrigue : 56ans
+          ...
+          
+      NB : Devra bien entendu s'afficher le membre qui vient de s'inscrire.
+
+    -->
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <h3 id="Bienvenue"></h3>
+    <!-- Emmet : form>(input[type=text][id=])*5 -->
+    <form id="registerForm" method="GET" action="membres.php">
+        <input type="text"   id="pseudo"  placeholder="Choisissez un Pseudo"><br />
+        <div class="pseudoError">Ce pseudo est déjà pris.</div><br />
+        
+        <input type="text"   id="age"     placeholder="Quel est votre Age ?"><br />
+        <div class="ageError">Vous devez avoir au moins 18 ans pour vous inscrire.</div><br />
+        
+        <input type="email"  id="email"   placeholder="Quel est votre Email ?"><br /><br />
+        <input type="password"   id="mdp"     placeholder="****"><br /><br />
+        <input type="button" id="submit" value="M'inscrire">
+    </form>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            var membres = [
+              {'pseudo':'Hugo','age':26,'email':'wf3@hl-media.fr','mdp':'wf3'},
+              {'pseudo':'Rodrigue','age':56,'email':'rodrigue@hl-media.fr','mdp':'roro'},
+              {'pseudo':'James','age':78,'email':'james@hl-media.fr','mdp':'james8862'},
+              {'pseudo':'Emilio','age':18,'email':'milio@hl-media.fr','mdp':'milioDu62'}
+            ];
+         // Lors de la saisie verifier en temps réel la disponibilite du pseudo
+                // Recuperation des champs a verifier
+            nombreDeMembres = membres.length
+            // -- déclaration variable
+
+            var age, pseudo,email,mdp,bienvenue,pseudoError,ageError;
+            age         = $('#age');
+            pseudo      = $('#pseudo');
+            email       = $('#email')
+            mdp         = $('#mdp')
+            bienvenue   = $('#Bienvenue')
+            form        = $('form')
+            pseudoError = $('.pseudoError')
+            submit      = $('#submit')
+            ageError    = $('.ageError')
+
+            // -- déclaration fonction
+
+
+            function afficherPseudoError(){
+                $(pseudoError).fadeIn()
+            }
+
+            function cacherPseudoError(){
+                $(pseudoError).fadeOut()
+            }
+
+            function afficherAgeError(){
+                $(ageError).fadeIn()
+            }
+
+            function cacherAgeError(){
+                $(ageError).fadeOut()
+            }
+            
+            // -- Verif pseudo
+
+            pseudo.keyup(function(){
+                for(let i = 0 ; i <nombreDeMembres ; i++){
+                    if(pseudo.val() === membres[i].pseudo){
+                    afficherPseudoError();
+                    submit.attr('disabled', true);
+                    break;
+                    } else if(pseudo.val() != membres[i].pseudo) {
+                        cacherPseudoError();
+                        submit.attr('disabled', false);
+                        bienvenue.text(pseudo.val());
+                        break;
+                        
+                    }
+            }})
+
+            // -- verif age
+
+            age.keyup(function(){
+                if(age.val() < 18){
+                    afficherAgeError();
+                    submit.attr('disabled', true);
+                } else if (age.val() >= 18) {
+                    cacherAgeError();
+                    submit.attr('disabled', false);
+                }
+                
+            })
+            form.on('submit', function (e){
+                e.preventDefault();
+
+                let Contact = {
+                    
+                    pseudo : pseudo.val(),
+                    age  : age.val(),
+                    email : email.val(),
+                    mdp   : mdp.val()
+
+                }
+                membres.push(Contact);
+                nombreDeMembres = membres.length;
+                
+                function executeList (contact){
+                    $(`<p>Merci ! ${contact.pseudo()} ! 
+                    <br/><br/><strong>Tu es maintenant inscrit Bravo ... </strong>
+                    <br/><br/><u>Voici la liste de nos membres : </u>
+                    </p>
+                    `).appendTo($('body'))
+
+                    // Pour generer la liste des membres
+                    var ul = $('<ul>');
+                    for (let i = 0 ; i< nombreDeMembres ; i++){
+
+                        $(`<li>${membres.pseudo} : ${membres.age}</li>
+                        `).appendTo(ul)
+                    }
+                }
+                
+            })
+            
+            
+            
+            
+            
+            
+
+        // Si il existe afficher la notification pseudoerror et desactiver le bouton
+
+        // Si l'utilisateur corrige alors la notification et le bouton sont réactiver
+
+        // L'age de l'utilisateur doit etre egale ou superieur a 18 ans
+
+        // Si cette condition n'est pas rempli afficher la notification ageError et desactiver le bouton submit
+
+        // Si l'utilisateur change son age alors la notification et le bouton sont réactiver
+
+
+        // Si toutel es condition sont validée l'utilisateur peut proceder a l'inscription
+
+        // en cliquant sur inscription je dois enclencher deux action
+        // Ajout de l'utilisateur dans le tableau
+
+        // L'affichage pour l'utilisateur sur la page d'un message de bienvenue,
+
+        // ainsi que la liste des membres inscrit dans une liste non-ordonnée.(nouveau membre compris)
+      
+        });
+        
+
+
+
+
+    </script>
+</body>
+</html>

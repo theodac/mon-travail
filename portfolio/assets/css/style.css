@@ -9,10 +9,13 @@ main {
     overflow: hidden;
 }
 #nav {
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
 
+}
+.top-nav-collapse{
+  background: black;
 }
 .banniere {
     position: relative;
@@ -232,6 +235,10 @@ body{
     .gal-container .modal-content{
         height:250px;
     }
+    .presentation div {
+      width: 100% !;
+    }
+
 }
 .description  {
  
